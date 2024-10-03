@@ -1,0 +1,240 @@
+$font-family: "Poppins", sans-serif;
+$color-primary: #343a40;
+$color-secondary: #f8f9fa;
+$color-bg: #f0f0f0;
+$color-hero-bg: #007bff;
+$color-hero-btn: #ffc107;
+$color-hover-btn: rgb(211, 158, 0);
+$color-about-bg: #ff5722;
+$color-features-bg: #6c757d;
+$color-testimonials-bg: #ffc107;
+$color-footer-bg: #343a40;
+$color-footer-link-hover: rgb(255, 205, 58);
+
+body {
+  font-family: $font-family;
+  color: $color-primary;
+  background-color: $color-bg;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: $color-primary;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+#hero {
+  background-color: $color-hero-bg;
+  color: $color-secondary;
+  background-image: linear-gradient(135deg, $color-hero-bg 60%, #ff5722 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background-color: $color-hero-btn;
+    border: none;
+    color: $color-primary;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: $color-hover-btn;
+    }
+  }
+
+  .demo-video img {
+    border: 2px solid $color-hero-btn;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+#about {
+  background-color: $color-about-bg;
+  color: $color-secondary;
+
+  .col-md-4 {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    i {
+      color: $color-hero-btn;
+      font-size: 3rem;
+    }
+
+    h3 {
+      margin-top: 1rem;
+      color: $color-secondary;
+      font-size: 1.75rem;
+    }
+
+    p {
+      color: $color-secondary;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+#features {
+  background-color: $color-features-bg;
+  color: $color-secondary;
+
+  .carousel-inner {
+    .card {
+      border: none;
+      background-color: $color-secondary;
+      color: $color-primary;
+      padding: 2rem;
+      transition: background-color 0.3s ease;
+
+      h3 {
+        color: $color-hero-bg;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background-color: $color-about-bg;
+        color: $color-secondary;
+
+        h3, p {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: $color-primary; 
+  }
+}
+
+#testimonials {
+  background-color: $color-testimonials-bg;
+  color: $color-primary;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: $color-primary;
+    margin: 1.5rem 0;
+
+    footer {
+      font-size: 1rem;
+      color: $color-secondary;
+    }
+  }
+
+  .row {
+    margin: 0; 
+  }
+}
+
+#contact form .btn-primary {
+  background-color: $color-hero-bg;
+  border: none;
+  color: $color-secondary;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+
+footer {
+  background-color: $color-footer-bg;
+  color: $color-secondary;
+  padding: 2rem 0;
+  text-align: center;
+
+  a {
+    color: $color-hero-btn;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-footer-link-hover;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #about, #features, #testimonials, #contact {
+        padding: 4rem 0;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    blockquote {
+        font-size: 0.85rem;
+    }
+}
